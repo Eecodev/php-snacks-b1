@@ -1,11 +1,13 @@
 <?php
 
-    $games = [
+    // snack 1
+    // $games = [
+        /*
         [
             'in_house_team' => 'Chicago Bulls',
             'foreign_team' => 'Boston Celtics',
             'in_house_score' => '65',
-            'foreign_score'=> '40',
+            'foreign_score' => '40',
         ],
         [
             'in_house_team' => 'Miami Heat',
@@ -25,7 +27,8 @@
             'in_house_score' => '83',
             'foreign_score'=> '76',
         ],
-    ]
+    // ]
+    */
 
 ?>
 
@@ -42,20 +45,35 @@
 <body>
     <div class="container">
         <header>
-            <h1>NBA SCORES</h1>
+            <!-- <h1>NBA SCORES</h1> -->
+            <h1>SNACK 2</h1>
+            <!-- <h1>BONUS</h1> -->
         </header>
         <main>
-        <?php
-        foreach($games as $game){
-            echo 
-            "<div> 
-                {$game['in_house_team']} 
-                - {$game['foreign_team']} 
-                | {$game['in_house_score']} 
-                - {$game['foreign_score']}
-            </div>";
-            }
-        ?>
+            <!-- snack 1 -->
+            <?php
+                /*foreach($games as $game){
+                    echo "<div>{$game['in_house_team']} - {$game['foreign_team']} | {$game['in_house_score']} - {$game['foreign_score']}</div>";
+                    }
+                */
+            ?> 
+
+            <!-- snack 2 -->
+            <form action="process.php" method="GET">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Age</label>
+                    <input type="age" class="form-control" id="age" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </main>  
     </div>
     
