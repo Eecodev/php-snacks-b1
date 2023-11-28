@@ -62,15 +62,15 @@
             <form action="process.php" method="GET">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                    <input type="name" class="form-control" name="name" id="name" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Age</label>
-                    <input type="age" class="form-control" id="age" aria-describedby="emailHelp">
+                    <input type="age" class="form-control" name="age" id="age" aria-describedby="emailHelp">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

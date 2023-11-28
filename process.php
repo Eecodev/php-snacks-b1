@@ -7,10 +7,11 @@
             'age' => '29',
         ]
     ];
-
-        if(isset($_GET['name']) && strlen($_GET['name']) > 3 && filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) && is_numeric($_GET['age'])){
+    
+        if(isset($_GET['name']) && strlen($_GET['name']) > 3 && filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) && (is_numeric($_GET['age']))){
             echo 'Access enabled';   
         } else {
             echo 'Access denied';
-        }
+        };
+
 ?>
