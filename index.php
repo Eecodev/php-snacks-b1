@@ -29,6 +29,14 @@
         ],
     // ]
     */
+    
+
+    //BONUS
+    $longParagraph = "Joahina was still trying to regain her senses of the lived world. “Oh god, I really went too far, they told me this would happen,” she murmured to herself as she stumbled towards the kitchen, hitting every furniture corner and doorframe on the way. After taking some water and injecting herself with 200 mg of nicotinic acid, her heartbeat began to slow down. It was comforting to be alone again, taking hallucinogenic drugs demands radical openness and she struggled with that quite a bit. Being a part of a society that based itself on non-individuality was one thing, but exposing oneself to dissolvement of individuum was something else entirely. Her two cats started rubbing themselves on her legs and purring softly while she was trying to recover. They always seemed to like her more after or while she consumed hallucinogens.
+
+    Ever since the new world order was established approximately 80 years ago, the monarch encouraged everyone to experiment with hallucinogens. Since most possible scientific discoveries were already achieved and climate disaster partially averted, humans have been struggling with new breakthroughs and felt like life has lost its meaning. Some have went as far as saying it would be best to collectively end it. A few radical groups (mostly artists) practiced suicidal rituals regularly. Most humans followed the monarch’s request in hopes to regain a sense of direction and they were doing so by using synthetic hallucinogens since these were much safer to use and their side effects easily controlled. The high itself and hallucinations were much clearer, easier to manage and offered a sense of relief when searching for something new in human structures.";
+
+    $sentences = explode(" . ", $longParagraph);
 
 ?>
 
@@ -46,8 +54,8 @@
     <div class="container">
         <header>
             <!-- <h1>NBA SCORES</h1> -->
-            <h1>SNACK 2</h1>
-            <!-- <h1>BONUS</h1> -->
+            <!-- <h1>SNACK 2</h1> -->
+            <h1>BONUS</h1>
         </header>
         <main>
             <!-- snack 1 -->
@@ -59,7 +67,8 @@
             ?> 
 
             <!-- snack 2 -->
-            <form action="process.php" method="GET">
+            
+            <!-- <form action="process.php" method="GET">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Name</label>
                     <input type="name" class="form-control" name="name" id="name" aria-describedby="emailHelp">
@@ -73,7 +82,18 @@
                     <input type="age" class="form-control" name="age" id="age" aria-describedby="emailHelp">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </form> -->
+
+            <!-- Bonus -->
+            
+            <p>
+                <?php
+                foreach ($sentences as $sentence){
+                    echo $longParagraph;
+                }
+                ?>
+            </p>
+
         </main>  
     </div>
     

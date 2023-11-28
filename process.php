@@ -1,5 +1,6 @@
 <?php
 // snack 2
+    /*
     $contact_details = [
         [
             'name' => 'Mahdi',
@@ -13,5 +14,5 @@
         } else {
             echo 'Access denied';
         };
-
+    */
 ?>
