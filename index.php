@@ -36,7 +36,7 @@
 
     Ever since the new world order was established approximately 80 years ago, the monarch encouraged everyone to experiment with hallucinogens. Since most possible scientific discoveries were already achieved and climate disaster partially averted, humans have been struggling with new breakthroughs and felt like life has lost its meaning. Some have went as far as saying it would be best to collectively end it. A few radical groups (mostly artists) practiced suicidal rituals regularly. Most humans followed the monarch’s request in hopes to regain a sense of direction and they were doing so by using synthetic hallucinogens since these were much safer to use and their side effects easily controlled. The high itself and hallucinations were much clearer, easier to manage and offered a sense of relief when searching for something new in human structures.";
 
-    $sentences = explode(" . ", $longParagraph);
+    $sentences = explode(". ", $longParagraph);
 
 ?>
 
@@ -55,7 +55,7 @@
         <header>
             <!-- <h1>NBA SCORES</h1> -->
             <!-- <h1>SNACK 2</h1> -->
-            <h1>BONUS</h1>
+            <h1 class="pt-4 pb-3">ECOLOGY OF MINDS</h1>
         </header>
         <main>
             <!-- snack 1 -->
@@ -86,13 +86,14 @@
 
             <!-- Bonus -->
             
-            <p>
                 <?php
-                foreach ($sentences as $sentence){
-                    echo $longParagraph;
-                }
+                
+                    foreach ($sentences as $sentence) {
+                        echo "<p>{$sentence}.</p>";
+                    }
+                
+                    
                 ?>
-            </p>
 
         </main>  
     </div>
